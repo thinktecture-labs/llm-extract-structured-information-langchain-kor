@@ -1,0 +1,46 @@
+Create a single, self-contained, HTML file (do not use any javascript frameworks). CSS and Javascript should be embedded into the HTML file!
+
+The page must have the following content and functionality.
+
+A form with a single textbox (query). The value of the textbox must be HTTP POST to an API (http://localhost:8000/filter). Use Fetch API for that.
+
+Sample request payload:
+
+```json
+{
+    "query": "HERE COMES THE QUERY"
+}
+```
+
+The API will return a with a JSON. Sample response:
+
+```json
+{
+  "departure_airport": "Frankfurt",
+  "destination_airport": "London",
+  "departure_date": "2023-06-30",
+  "return_date": "2023-07-02",
+  "airline": [
+    "Lufthansa",
+    "Condor"
+  ],
+  "class": "premiumeconomy",
+  "number_of_persons": 2
+}
+```
+
+A second, readonly, form should be created, which has the following fields:
+
+- departure_airport
+- destination_airport
+- departure_date
+- return_date
+- airline
+- class
+- number_of_persons
+
+The second form should be filled the values from the API response.
+
+No validation is required!
+
+For styling, please use Bootstrap (which can be loaded from a CDN) with the default theme.

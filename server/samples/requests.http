@@ -1,0 +1,6 @@
+POST http://localhost:8000/filter  HTTP/1.1
+Content-Type: application/json
+
+{
+    "query": "Frankfurt - London. Übermorgen hin, Sonntag darauf zurück, zwei Erwachsene, nur Lufthansa oder Condor"
+}
